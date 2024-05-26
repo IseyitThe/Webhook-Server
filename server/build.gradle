@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '8.1.1'
+}
+
+dependencies {
+    implementation 'com.google.code.gson:gson:2.8.7'
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'me.seyit.webhookserver.WebhookServer',
+        )
+    }
+    archiveFileName = 'server.jar'
+}

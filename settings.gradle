@@ -1,0 +1,5 @@
+rootProject.name = 'Serverside-Webhook'
+
+include 'client'
+include 'server'
+
